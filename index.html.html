@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>Gaming hub</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" type="text/css" href="footer.css">
+	 <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+
+</style>
+</head>
+<body>
+	<main>
+	<div class="about-section">
+	<center><h1>GAMING HUB </h1></center>
+</div>
+	
+	<div class="topnav">
+  <a class="active" href="gamehub.html">Home</a>
+  <a href="news.html">News</a>
+  <a href="game.html">Game</a>
+</div>
+	
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="resources/image/1.jpg"  width="1600" height="600">
+  <div class="text"><h2><i>"You have not seen desperation and helplessness till you have seen a man hopeless in love. Of course, unless you have seen a gamer"</i></h2></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="resources/image/2.jpg" width="1600" height="600">
+  <div class="text"><h2><i>"I survived because the fire inside me burned brighter than the fire around me."</i></h2></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="resources/image/3.jpg" width="1600" height="600">
+  <div class="text">  <div class="text"><h2><i>"The right man in the wrong place can make all the difference in the world. So wake up Mr. Freeman, wake up and smell the ashes."</i></h2></div>
+</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</main>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+<div class="row">
+  <div class="side">
+  <img src="resources/image/n1.png">
+    <p><h2>A killer app for the metaverse? Fill it with AI avatars of ourselves – so we don’t need to go there</h2></p>
+    <p><i><h4>Alex Connock, University of Oxford</h4></i></p>
+    <p>Many people are talking about this coming virtual world, but many others would rather stay where they are.</p>
+    <img src="resources/image/n2.jpg">
+    <p><h2>Video games can add to kids’ learning during COVID-19 pandemic</h2></p>
+    <p><i><h4>Joe Todd, University of Waterloo</h4></i></p>
+    <p>Video games can be useful in learning English, math, history, physics and yes, even physical education. While they’re not a substitute for schooling, video games are a great indoor activity.</p>
+    <img src="resources/image/n3.jpg">
+    <p><h2>Free Guy’s philosophy: could we just be lines of code in a grand simulation?</h2></p>
+    <p><i><h4>Katie Headrick Taylor, University of Washington</h4></i></p>
+    <p>Guy is happy living his life unaware that he is just a character in a grand simulation. Could we all be doing same?</p>
+ 
+  </div>
+
+<!--Start Footer-->
+<footer>
+    <div>
+  <ul>
+    <li><a href="#https://twitter.com/julesforrest">Twitter</a></li>
+    <li><a href="#https://codepen.io/julesforrest">Instagram</a></li>
+    <li><a href="#mailto:julesforrest@gmail.com">Email</a></li>
+    <li><a href="#https://dribbble.com/julesforrest">facebook</a></li>
+    <li>
+      <p>👋</p>
+    </li>
+  </ul>
+</div>
+</footer>
+</body>
+</html>
